@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 from tensorflow.keras.models import load_model
 import streamlit as st
 
-os.chdir(r"C:/Users/1000299246/Downloads/streamlit")
+# os.chdir(r"C:/Users/User/Downloads/streamlit")
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 curdir = os.getcwd()
 print(f"Current Directory: {curdir}")
