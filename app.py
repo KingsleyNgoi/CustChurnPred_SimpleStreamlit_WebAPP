@@ -6,18 +6,18 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 from tensorflow.keras.models import load_model
 import streamlit as st
 
-os.chdir(r"C:\Users\1000299246\Downloads\streamlit")
+os.chdir(r"C:/Users/1000299246/Downloads/streamlit")
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 curdir = os.getcwd()
 print(f"Current Directory: {curdir}")
 print(f"Tensorflow Keras version: {tf.__version__}")
 
 # Load the trained model
-model = load_model(r'.\model\model_ct.h5')
+model = load_model(r'./model/model_ct.h5')
 # Load the encoders and scaler
-with open(r'.\scaler_encoder\onehot_encoder_ct.pkl', 'rb') as file:
+with open(r'./scaler_encoder/onehot_encoder_ct.pkl', 'rb') as file:
     onehot_encoder = pickle.load(file)
-with open(r'.\scaler_encoder\scaler_ct.pkl', 'rb') as file:
+with open(r'./scaler_encoder/scaler_ct.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 
